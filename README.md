@@ -1,11 +1,10 @@
 # Hogwarts Sorting
 
-### Personal Project (Independent)
-
-This personal project was developed using knowledge up to Section 11 of the **Complete iOS Development Bootcamp** by Angela Yu. The app determines a user’s Hogwarts house based on a series of personality-based questions, following the MVC architecture and using multiple view controllers.
+### Project for Section 11: **Personalized House Quiz App**  
+This project was developed using knowledge up to Section 11 of the **Complete iOS Development Bootcamp** by Angela Yu.
 
 ## Project Overview
-The **Hogwarts Sorting** app is designed to assign a user to one of the four Hogwarts houses based on their responses to a series of questions. With dynamic updates and real-time progress tracking, this app calculates personality traits like bravery, ambition, kindness, and more to deliver a final house assignment at the end of the quiz.
+The **Hogwarts Sorting** app is designed to assign a user to one of the four Hogwarts houses based on their responses to a series of personality-based questions. With dynamic updates and real-time progress tracking, this app calculates traits like bravery, ambition, kindness, and more to deliver a final house assignment.
 
 ## What I Learned
 In this project, I focused on:
@@ -25,12 +24,12 @@ In this project, I focused on:
 ---
 
 ### Project Preview
-![Project Preview](./Documents/Readme.png)
+<img src="./Documents/Readme.png" alt="Hogwarts Sorting App Preview" width="300px">
 
 ---
 
 ### Footer
-![Footer Image](./Documents/Linkedin.jpg)
+<img src="./Documents/Linkedin.jpg" alt="Footer Image">
 
 ---
 
