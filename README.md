@@ -25,7 +25,7 @@ In this project, I focused on:
 ---
 
 ### Project Preview
-![Project Preview](./Documents/HogwartsSorting.png)
+![Project Preview](./Documents/Readme.png)
 
 ---
 
