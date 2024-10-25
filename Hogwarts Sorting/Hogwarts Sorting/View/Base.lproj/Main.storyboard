@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="seb-zh-XIH">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Help View Controller-->
+        <scene sceneID="sZk-gN-isJ">
+            <objects>
+                <viewController id="1wQ-RX-kq0" customClass="FirstHelpViewController" customModule="Hogwarts_Sorting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SNq-jy-kgi">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="946"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jEq-jN-F9n">
+                                <rect key="frame" x="0.0" y="50" width="440" height="881"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="chevron.down.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="v5v-9h-vS5">
+                                        <rect key="frame" x="195" y="0.66666666666666785" width="50" height="48.666666666666657"/>
+                                        <color key="tintColor" red="0.16078431369999999" green="0.039215686270000001" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GYi-3W-yEu"/>
+                                            <constraint firstAttribute="width" constant="50" id="RhI-MC-f47"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sortinghat" translatesAutoresizingMaskIntoConstraints="NO" id="E2U-Ik-sZL">
+                                        <rect key="frame" x="104" y="60" width="232" height="262"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="slX-KT-0gE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Hmm… Difficult, very difficult. So, where would you like to go?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Bxv-mc-Bus">
+                                        <rect key="frame" x="30" y="332" width="380" height="321.66666666666674"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="35"/>
+                                        <color key="textColor" red="0.16078431372549018" green="0.039215686274509803" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ODv-2E-uBX">
+                                        <rect key="frame" x="30" y="663.66666666666663" width="380" height="217.33333333333337"/>
+                                        <string key="text">The Sorting Hat always knows best, but it’s curious… Do you have a house in mind? Don’t worry, your fate is in good hands (or rather, on your head)! Answer wisely, and let the magic guide you to your true Hogwarts family!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" red="0.16078431369999999" green="0.039215686270000001" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Bxv-mc-Bus" secondAttribute="trailing" constant="30" id="3PJ-kO-5XV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ODv-2E-uBX" secondAttribute="trailing" constant="30" id="bvq-gT-RZR"/>
+                                    <constraint firstItem="Bxv-mc-Bus" firstAttribute="leading" secondItem="jEq-jN-F9n" secondAttribute="leading" constant="30" id="oCh-XY-al4"/>
+                                    <constraint firstItem="ODv-2E-uBX" firstAttribute="leading" secondItem="jEq-jN-F9n" secondAttribute="leading" constant="30" id="ykd-qE-UFT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i31-g4-ry4"/>
+                        <color key="backgroundColor" red="0.96078431610000004" green="0.90980386729999996" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="i31-g4-ry4" firstAttribute="bottom" secondItem="jEq-jN-F9n" secondAttribute="bottom" constant="15" id="93x-j3-9qX"/>
+                            <constraint firstItem="jEq-jN-F9n" firstAttribute="top" secondItem="i31-g4-ry4" secondAttribute="top" constant="50" id="cOd-e4-9eA"/>
+                            <constraint firstItem="jEq-jN-F9n" firstAttribute="leading" secondItem="i31-g4-ry4" secondAttribute="leading" id="qle-UH-cDP"/>
+                            <constraint firstItem="i31-g4-ry4" firstAttribute="trailing" secondItem="jEq-jN-F9n" secondAttribute="trailing" id="sFH-Il-IvO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="v5v-9h-vS5" id="Ac7-V3-zq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ubs-IL-bWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="-3"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Hogwarts_Sorting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="veh-3D-huV">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ZB5-EB-626">
+                                <rect key="frame" x="30" y="0.0" width="380" height="956"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="azc-Bf-S4O">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="380"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="azc-Bf-S4O" secondAttribute="height" multiplier="1:1" id="7Cx-Dx-lZH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-B8-Jyg">
+                                        <rect key="frame" x="0.0" y="420" width="380" height="243"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                        <color key="textColor" red="0.1176470588" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="J7q-op-8nJ">
+                                        <rect key="frame" x="40" y="703" width="300" height="201"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWH-vb-O5e">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="90" id="ncC-SN-wE6"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="large">
+                                                    <backgroundConfiguration key="background" strokeWidth="9" strokeOutset="0.0">
+                                                        <color key="backgroundColor" red="0.98039215800000001" green="0.9529411793" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="strokeColor" red="0.1764705926" green="0.32549020649999999" blue="0.38823530080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                                    <color key="baseForegroundColor" red="0.1411764771" green="0.2588235438" blue="0.30980393290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hsi-Es-Qrx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uC2-X3-OE2">
+                                                <rect key="frame" x="0.0" y="111" width="300" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="90" id="TFA-U7-bC9"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="large">
+                                                    <backgroundConfiguration key="background" strokeWidth="9" strokeOutset="0.0">
+                                                        <color key="backgroundColor" red="0.98039215800000001" green="0.9529411793" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="strokeColor" red="0.1764705926" green="0.32549020649999999" blue="0.38823530080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                                    <color key="baseForegroundColor" red="0.1411764771" green="0.2588235438" blue="0.30980393290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EMl-Vc-m03"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Srt-aK-gkx"/>
+                                        </constraints>
+                                    </stackView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gqu-w0-gMN">
+                                        <rect key="frame" x="25" y="944" width="330" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="oQr-zS-GqJ"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="0.52549019610000003" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" red="0.15686275059999999" green="0.2941176593" blue="0.34901961679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nyd-B8-Jyg" firstAttribute="leading" secondItem="ZB5-EB-626" secondAttribute="leading" id="0fv-gz-gbt"/>
+                                    <constraint firstAttribute="trailing" secondItem="nyd-B8-Jyg" secondAttribute="trailing" id="3ba-IX-15P"/>
+                                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="gqu-w0-gMN" secondAttribute="bottom" constant="10" id="3eE-Du-9ab"/>
+                                    <constraint firstAttribute="trailing" secondItem="gqu-w0-gMN" secondAttribute="trailing" constant="25" id="Jlg-a1-iT3"/>
+                                    <constraint firstItem="gqu-w0-gMN" firstAttribute="leading" secondItem="ZB5-EB-626" secondAttribute="leading" constant="25" id="ndq-K8-1eP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kHf-f2-RMH"/>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.94901960780000005" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kHf-f2-RMH" firstAttribute="bottom" secondItem="ZB5-EB-626" secondAttribute="bottom" id="4PH-pa-HvM"/>
+                            <constraint firstItem="ZB5-EB-626" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="veh-3D-huV" secondAttribute="leading" constant="30" id="96Q-bR-Nyx"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZB5-EB-626" secondAttribute="trailing" constant="30" id="GTa-Tl-yH7"/>
+                            <constraint firstItem="ZB5-EB-626" firstAttribute="top" secondItem="kHf-f2-RMH" secondAttribute="top" id="P6c-4V-C3A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mb3-qD-AxG"/>
+                    <connections>
+                        <outlet property="button1Label" destination="nWH-vb-O5e" id="L3L-nA-JKA"/>
+                        <outlet property="button2Label" destination="uC2-X3-OE2" id="GPi-eD-UlP"/>
+                        <outlet property="imageView" destination="azc-Bf-S4O" id="AEj-og-XE3"/>
+                        <outlet property="progressView" destination="gqu-w0-gMN" id="nYB-2S-82D"/>
+                        <outlet property="textView" destination="nyd-B8-Jyg" id="6AX-Bt-fRQ"/>
+                        <segue destination="Inh-zm-IPU" kind="presentation" identifier="Gryffindor" modalPresentationStyle="overFullScreen" id="B6D-q5-BYC"/>
+                        <segue destination="9ec-ts-zNX" kind="presentation" identifier="Ravenclaw" modalPresentationStyle="overFullScreen" id="oMI-dm-wJE"/>
+                        <segue destination="SCp-Yq-hTL" kind="presentation" identifier="Hufflepuff" modalPresentationStyle="overFullScreen" id="27r-lZ-sSx"/>
+                        <segue destination="70N-L9-ZMR" kind="presentation" identifier="Slytherin" modalPresentationStyle="overFullScreen" id="mKA-Mi-2AK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="-3"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="VHZ-Mh-OfF">
+            <objects>
+                <viewController id="seb-zh-XIH" customClass="FirstViewController" customModule="Hogwarts_Sorting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DXf-B5-Bsm">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="sKM-DU-IiM">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="viewLoad" translatesAutoresizingMaskIntoConstraints="NO" id="BfV-zu-EAA">
+                                        <rect key="frame" x="23.666666666666657" y="0.0" width="393" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="400" id="86h-4m-dKj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you ready to find out which house you truly belong to?" textAlignment="center" lineBreakMode="clip" numberOfLines="0" minimumFontSize="30" adjustsLetterSpacingToFitWidth="YES" showsExpansionTextWhenTruncated="YES" sizingRule="oversize" translatesAutoresizingMaskIntoConstraints="NO" id="Nc0-Kr-eA4">
+                                        <rect key="frame" x="30" y="440" width="380" height="311"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                        <color key="textColor" red="0.1176470588" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qPw-jl-C3L">
+                                        <rect key="frame" x="70" y="791" width="300" height="165"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce4-BZ-s2K" userLabel="Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="X7u-7W-W1e"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Let’s Go" cornerStyle="large">
+                                                    <backgroundConfiguration key="background" strokeWidth="9" strokeOutset="0.0">
+                                                        <color key="backgroundColor" red="0.98431372549019602" green="0.94901960784313721" blue="0.88235294117647056" alpha="1" colorSpace="deviceRGB"/>
+                                                        <color key="strokeColor" red="0.1176470588" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="32"/>
+                                                    <color key="baseForegroundColor" red="0.1176470588" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="letsGoButtonPressed:" destination="seb-zh-XIH" eventType="touchUpInside" id="enJ-75-dAm"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="mainView" modalPresentationStyle="fullScreen" id="clP-04-t7c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-RZ-WLp" userLabel="Button">
+                                                <rect key="frame" x="0.0" y="85" width="300" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="Nf5-Lx-RSc"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Help" cornerStyle="large">
+                                                    <backgroundConfiguration key="background" strokeWidth="7" strokeOutset="0.0">
+                                                        <color key="backgroundColor" red="0.98431372549019602" green="0.94901960784313721" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="strokeColor" red="0.1176470588" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="32"/>
+                                                    <color key="baseForegroundColor" red="0.1176470588" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="helpButtonPressed:" destination="seb-zh-XIH" eventType="touchUpInside" id="0GJ-Cb-WJF"/>
+                                                    <segue destination="1wQ-RX-kq0" kind="presentation" identifier="firstViewHelp" modalPresentationStyle="pageSheet" id="EZ5-Tx-Uxx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="qPw-jl-C3L" secondAttribute="trailing" constant="70" id="bW2-kp-sOK"/>
+                                    <constraint firstItem="Nc0-Kr-eA4" firstAttribute="leading" secondItem="sKM-DU-IiM" secondAttribute="leading" constant="30" id="hUP-4k-C7n"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nc0-Kr-eA4" secondAttribute="trailing" constant="30" id="vQ6-xi-llc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="itz-Pm-IeZ"/>
+                        <color key="backgroundColor" red="0.69019607839999997" green="0.78823529410000004" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sKM-DU-IiM" secondAttribute="trailing" id="fw9-SH-WbV"/>
+                            <constraint firstItem="itz-Pm-IeZ" firstAttribute="top" secondItem="sKM-DU-IiM" secondAttribute="top" id="hfv-hp-dST"/>
+                            <constraint firstItem="sKM-DU-IiM" firstAttribute="leading" secondItem="itz-Pm-IeZ" secondAttribute="leading" id="mxe-q1-q9g"/>
+                            <constraint firstItem="itz-Pm-IeZ" firstAttribute="bottom" secondItem="sKM-DU-IiM" secondAttribute="bottom" id="y28-ID-ShZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LnL-kL-SRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="-2"/>
+        </scene>
+        <!--Gryffindor View Controller-->
+        <scene sceneID="0kI-dG-Mof">
+            <objects>
+                <viewController storyboardIdentifier="Gryffindor" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Inh-zm-IPU" customClass="GryffindorViewController" customModule="Hogwarts_Sorting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ueq-M9-RaS">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GryffindorBC" translatesAutoresizingMaskIntoConstraints="NO" id="fMQ-bG-BXE">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uGc-cR-CfX">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8JD-wZ-SC5">
+                                        <rect key="frame" x="5.3333333333333428" y="0.0" width="429.66666666666663" height="472"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GryffindorFlag" translatesAutoresizingMaskIntoConstraints="NO" id="lYe-iD-JNX">
+                                                <rect key="frame" x="0.0" y="0.0" width="207.33333333333334" height="472"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="nMe-vv-1JX">
+                                                <rect key="frame" x="222.33333333333331" y="0.0" width="207.33333333333331" height="472"/>
+                                                <string key="text">You've been sorted into Gryffindor!🤓
+Get ready for all the adventures ahead. Go and make your house proud!</string>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="lWG-XJ-h3q"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎉 Congratulations! 🎉" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="iyr-4D-Rcy">
+                                        <rect key="frame" x="20" y="487" width="400" height="374"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFh-16-cCJ">
+                                        <rect key="frame" x="70" y="876" width="300" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="Njc-Q6-AjX"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="kGG-B5-EA0"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Test Again" cornerStyle="large">
+                                            <backgroundConfiguration key="background" strokeWidth="7">
+                                                <color key="backgroundColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="strokeColor" red="0.37254901959999998" green="0.015686274510000001" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.37254901959999998" green="0.015686274510000001" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="testAgainButtonPressed:" destination="Inh-zm-IPU" eventType="touchUpInside" id="UyN-ad-vYB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iyr-4D-Rcy" secondAttribute="trailing" constant="20" id="CzD-aU-EYU"/>
+                                    <constraint firstItem="8JD-wZ-SC5" firstAttribute="top" secondItem="uGc-cR-CfX" secondAttribute="top" id="m2f-RN-Uuw"/>
+                                    <constraint firstItem="iyr-4D-Rcy" firstAttribute="leading" secondItem="uGc-cR-CfX" secondAttribute="leading" constant="20" id="rNf-Hy-fyn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QDe-Ua-nAu"/>
+                        <color key="backgroundColor" red="0.4588235021" green="0.24313727020000001" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="uGc-cR-CfX" firstAttribute="top" secondItem="ueq-M9-RaS" secondAttribute="top" id="0tT-r5-8sM"/>
+                            <constraint firstItem="QDe-Ua-nAu" firstAttribute="bottom" secondItem="uGc-cR-CfX" secondAttribute="bottom" id="2Q3-1j-GRz"/>
+                            <constraint firstAttribute="bottom" secondItem="fMQ-bG-BXE" secondAttribute="bottom" id="3Wn-7z-uoh"/>
+                            <constraint firstAttribute="trailing" secondItem="fMQ-bG-BXE" secondAttribute="trailing" id="B42-Z4-Kab"/>
+                            <constraint firstItem="fMQ-bG-BXE" firstAttribute="top" secondItem="ueq-M9-RaS" secondAttribute="top" id="Fed-nC-Njo"/>
+                            <constraint firstItem="QDe-Ua-nAu" firstAttribute="trailing" secondItem="uGc-cR-CfX" secondAttribute="trailing" id="IqF-pa-mTo"/>
+                            <constraint firstItem="fMQ-bG-BXE" firstAttribute="leading" secondItem="ueq-M9-RaS" secondAttribute="leading" id="MPe-RG-8Uz"/>
+                            <constraint firstItem="uGc-cR-CfX" firstAttribute="leading" secondItem="QDe-Ua-nAu" secondAttribute="leading" id="VgB-RB-r0j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="seb-zh-XIH" kind="presentation" identifier="backHome" modalPresentationStyle="overFullScreen" id="5Jj-ND-oxl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1C-Md-Lbr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="-23"/>
+        </scene>
+        <!--Hufflepuff View Controller-->
+        <scene sceneID="ncm-SD-ta1">
+            <objects>
+                <viewController storyboardIdentifier="Hufflepuff" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SCp-Yq-hTL" customClass="Hufflepuff_ViewController" customModule="Hogwarts_Sorting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h4r-zB-3ip">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hufflepuffBC" translatesAutoresizingMaskIntoConstraints="NO" id="Ht7-ly-zIy">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lBg-Xn-I7q">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lmI-lS-VWt">
+                                        <rect key="frame" x="0.0" y="0.0" width="440" height="470.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hufflepuffFlag" translatesAutoresizingMaskIntoConstraints="NO" id="2Nd-d5-ueX">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="470.66666666666669"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="6JA-uA-5IO">
+                                                <rect key="frame" x="220" y="0.0" width="220" height="470.66666666666669"/>
+                                                <string key="text">You've been sorted into Hufflepuff!🤓
+Get ready for all the adventures ahead. Go and make your house proud!</string>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="3nB-M8-OcQ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎉 Congratulations! 🎉" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="L5s-7x-Qon">
+                                        <rect key="frame" x="54.333333333333343" y="485.66666666666674" width="331.66666666666663" height="375.33333333333326"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bid-bt-e9i">
+                                        <rect key="frame" x="70" y="876" width="300" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="V6u-bD-ItW"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="eyZ-9w-YP0"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Test Again" cornerStyle="large">
+                                            <backgroundConfiguration key="background" strokeWidth="7">
+                                                <color key="backgroundColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="strokeColor" red="0.64705882349999999" green="0.35686274509999999" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.64705882349999999" green="0.35686274509999999" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="testAgainButtonPressed:" destination="SCp-Yq-hTL" eventType="touchUpInside" id="swx-dV-7kf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lmI-lS-VWt" firstAttribute="top" secondItem="lBg-Xn-I7q" secondAttribute="top" id="kRk-fh-tx9"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NmB-zU-MDJ"/>
+                        <color key="backgroundColor" red="0.76470589639999997" green="0.59607845540000004" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ht7-ly-zIy" secondAttribute="bottom" id="6hD-p1-LoW"/>
+                            <constraint firstItem="lBg-Xn-I7q" firstAttribute="leading" secondItem="NmB-zU-MDJ" secondAttribute="leading" id="ZMi-g3-apG"/>
+                            <constraint firstAttribute="trailing" secondItem="Ht7-ly-zIy" secondAttribute="trailing" id="fuI-Tu-oww"/>
+                            <constraint firstItem="Ht7-ly-zIy" firstAttribute="leading" secondItem="h4r-zB-3ip" secondAttribute="leading" id="hFw-5M-WEo"/>
+                            <constraint firstItem="lBg-Xn-I7q" firstAttribute="top" secondItem="h4r-zB-3ip" secondAttribute="top" id="prm-k9-1uu"/>
+                            <constraint firstItem="NmB-zU-MDJ" firstAttribute="bottom" secondItem="lBg-Xn-I7q" secondAttribute="bottom" id="xAL-Eo-jhU"/>
+                            <constraint firstItem="Ht7-ly-zIy" firstAttribute="top" secondItem="h4r-zB-3ip" secondAttribute="top" id="y3a-gM-FQG"/>
+                            <constraint firstItem="NmB-zU-MDJ" firstAttribute="trailing" secondItem="lBg-Xn-I7q" secondAttribute="trailing" id="z5K-dv-S7B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pc8-YK-xI0"/>
+                    <connections>
+                        <segue destination="seb-zh-XIH" kind="presentation" identifier="backHome" modalPresentationStyle="overFullScreen" id="ffc-lQ-3Ph"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0w-tR-9a4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3132" y="-23"/>
+        </scene>
+        <!--Slytherin View Controller-->
+        <scene sceneID="Mx7-xQ-Dcq">
+            <objects>
+                <viewController storyboardIdentifier="Slytherin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="70N-L9-ZMR" customClass="SlytherinViewController" customModule="Hogwarts_Sorting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="77a-Qa-I1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slytherinBC" translatesAutoresizingMaskIntoConstraints="NO" id="fwk-Pe-gBI">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Mp7-4I-IJY">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="efy-gZ-LDX">
+                                        <rect key="frame" x="0.0" y="0.0" width="440" height="472"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slytherinFlag" translatesAutoresizingMaskIntoConstraints="NO" id="Ulo-c2-a2f">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="472"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="IJH-Mu-gHv">
+                                                <rect key="frame" x="220" y="0.0" width="220" height="472"/>
+                                                <string key="text">You've been sorted into Slytherin!🤓
+Get ready for all the adventures ahead. Go and make your house proud!</string>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="uEf-10-Ca9"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎉 Congratulations! 🎉" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="sWc-5P-Xh7">
+                                        <rect key="frame" x="54.333333333333343" y="487" width="331.66666666666663" height="374"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zd6-ff-83N">
+                                        <rect key="frame" x="70" y="876" width="300" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="5e5-zE-DEX"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="vsU-d9-DpL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Test Again" cornerStyle="large">
+                                            <backgroundConfiguration key="background" strokeWidth="7">
+                                                <color key="backgroundColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="strokeColor" red="0.019607843140000001" green="0.1764705882" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.019607843140000001" green="0.1764705882" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="testAgainButtonPressed:" destination="70N-L9-ZMR" eventType="touchUpInside" id="3ND-IL-UFD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="efy-gZ-LDX" firstAttribute="top" secondItem="Mp7-4I-IJY" secondAttribute="top" id="Jwn-QO-p4e"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fMo-WH-Uml"/>
+                        <color key="backgroundColor" red="0.19215688110000001" green="0.37254902719999999" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Mp7-4I-IJY" firstAttribute="top" secondItem="77a-Qa-I1Z" secondAttribute="top" id="32q-vP-nFP"/>
+                            <constraint firstItem="fwk-Pe-gBI" firstAttribute="top" secondItem="77a-Qa-I1Z" secondAttribute="top" id="9ZU-lg-U9s"/>
+                            <constraint firstAttribute="trailing" secondItem="fwk-Pe-gBI" secondAttribute="trailing" id="Ht4-Fh-KOi"/>
+                            <constraint firstItem="Mp7-4I-IJY" firstAttribute="leading" secondItem="fMo-WH-Uml" secondAttribute="leading" id="PGK-As-V5I"/>
+                            <constraint firstItem="fwk-Pe-gBI" firstAttribute="leading" secondItem="77a-Qa-I1Z" secondAttribute="leading" id="cf4-0V-hx5"/>
+                            <constraint firstItem="fMo-WH-Uml" firstAttribute="bottom" secondItem="Mp7-4I-IJY" secondAttribute="bottom" id="pNY-I2-OA4"/>
+                            <constraint firstItem="fMo-WH-Uml" firstAttribute="trailing" secondItem="Mp7-4I-IJY" secondAttribute="trailing" id="w9b-Ef-m1c"/>
+                            <constraint firstAttribute="bottom" secondItem="fwk-Pe-gBI" secondAttribute="bottom" id="zBa-wi-wJC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="seb-zh-XIH" kind="presentation" identifier="backHome" modalPresentationStyle="overFullScreen" id="Sbw-Sd-DPx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsR-qY-KZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3886" y="-23"/>
+        </scene>
+        <!--Ravenclaw View Controller-->
+        <scene sceneID="UkJ-HY-Bsa">
+            <objects>
+                <viewController storyboardIdentifier="Ravenclaw" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9ec-ts-zNX" customClass="RavenclawViewController" customModule="Hogwarts_Sorting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="clC-0r-oug">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ravenclawBC" translatesAutoresizingMaskIntoConstraints="NO" id="Ub5-MP-UAw">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="h8x-ev-B8V">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kZy-eE-gHF">
+                                        <rect key="frame" x="5.3333333333333428" y="0.0" width="429.66666666666663" height="468.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ravenclawFlag" translatesAutoresizingMaskIntoConstraints="NO" id="XCS-NS-Nua">
+                                                <rect key="frame" x="0.0" y="0.0" width="207.33333333333334" height="468.66666666666669"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ecu-Sa-AWY">
+                                                <rect key="frame" x="222.33333333333331" y="0.0" width="207.33333333333331" height="468.66666666666669"/>
+                                                <string key="text">You've been sorted into Ravenclaw!🤓
+Get ready for all the adventures ahead. Go and make your house proud!</string>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="w5U-D3-rY3"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎉 Congratulations! 🎉" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="Nni-Wa-NbU">
+                                        <rect key="frame" x="54.333333333333343" y="483.66666666666674" width="331.66666666666663" height="377.33333333333326"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4d-Gx-Qr2">
+                                        <rect key="frame" x="70" y="876" width="300" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="8gL-0O-Fbc"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="kIW-oT-g9a"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Test Again" cornerStyle="large">
+                                            <backgroundConfiguration key="background" strokeWidth="7">
+                                                <color key="backgroundColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="strokeColor" red="0.14901960780000001" green="0.10980392160000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="0.14901960780000001" green="0.10980392160000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="testAgainButtonPressed:" destination="9ec-ts-zNX" eventType="touchUpInside" id="Mtq-tY-amq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kZy-eE-gHF" firstAttribute="top" secondItem="h8x-ev-B8V" secondAttribute="top" id="ZBr-1T-VuC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sOm-rA-igl"/>
+                        <color key="backgroundColor" red="0.109803915" green="0.1294117719" blue="0.35686278339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Ub5-MP-UAw" firstAttribute="top" secondItem="clC-0r-oug" secondAttribute="top" id="80w-Nb-85z"/>
+                            <constraint firstItem="h8x-ev-B8V" firstAttribute="leading" secondItem="sOm-rA-igl" secondAttribute="leading" id="Epc-xW-0SR"/>
+                            <constraint firstItem="sOm-rA-igl" firstAttribute="bottom" secondItem="h8x-ev-B8V" secondAttribute="bottom" id="Ob7-zd-bQr"/>
+                            <constraint firstItem="sOm-rA-igl" firstAttribute="trailing" secondItem="h8x-ev-B8V" secondAttribute="trailing" id="OnV-cS-04U"/>
+                            <constraint firstItem="h8x-ev-B8V" firstAttribute="top" secondItem="clC-0r-oug" secondAttribute="top" id="aSB-hc-L0Y"/>
+                            <constraint firstItem="Ub5-MP-UAw" firstAttribute="leading" secondItem="clC-0r-oug" secondAttribute="leading" id="ewi-Ku-zr7"/>
+                            <constraint firstAttribute="trailing" secondItem="Ub5-MP-UAw" secondAttribute="trailing" id="gHr-Fz-tan"/>
+                            <constraint firstAttribute="bottom" secondItem="Ub5-MP-UAw" secondAttribute="bottom" id="kTT-Xs-bWm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3RG-3h-TGh"/>
+                    <connections>
+                        <segue destination="seb-zh-XIH" kind="presentation" identifier="backHome" modalPresentationStyle="overFullScreen" id="lei-71-eFV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQC-Qo-pfl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2378" y="-23"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Sbw-Sd-DPx"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="1" width="393" height="397"/>
+        <image name="GryffindorBC" width="393" height="850"/>
+        <image name="GryffindorFlag" width="154.66667175292969" height="472"/>
+        <image name="Sortinghat" width="232" height="262"/>
+        <image name="chevron.down.circle" catalog="system" width="128" height="123"/>
+        <image name="hufflepuffBC" width="393" height="850"/>
+        <image name="hufflepuffFlag" width="154.66667175292969" height="470.66665649414062"/>
+        <image name="ravenclawBC" width="393" height="850"/>
+        <image name="ravenclawFlag" width="154.66667175292969" height="468.66665649414062"/>
+        <image name="slytherinBC" width="393" height="850"/>
+        <image name="slytherinFlag" width="154.66667175292969" height="472"/>
+        <image name="viewLoad" width="393" height="393"/>
+    </resources>
+</document>
